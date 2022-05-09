@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Level/dev_dark.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Level/dev_orange.png" type="Texture" id=3]
 
@@ -63,14 +64,14 @@ height = 1.0
 depth = 1.0
 
 [node name="Wall1" type="CSGBox" parent="CSGCombiner/Entrance Room"]
-transform = Transform( 20, 0, 0, 0, 4, 0, 0, 0, 1, 0, 2, 6 )
+transform = Transform( 18, 0, 0, 0, 4, 0, 0, 0, 1, 0, 2, 6 )
 width = 1.0
 height = 1.0
 depth = 1.0
 material = SubResource( 2 )
 
 [node name="Wall2" type="CSGBox" parent="CSGCombiner/Entrance Room"]
-transform = Transform( -5.24537e-07, 0, 0.999999, 0, 4, 0, -12, 0, -4.37113e-08, 9.5, 2, -0.434746 )
+transform = Transform( -5.68248e-07, 0, 1, 0, 4, 0, -13, 0, -4.37114e-08, 9.5, 2, 0 )
 width = 1.0
 height = 1.0
 depth = 1.0
@@ -84,7 +85,7 @@ height = 1.0
 depth = 1.0
 
 [node name="Wall3" type="CSGBox" parent="CSGCombiner/Entrance Room"]
-transform = Transform( -5.24537e-07, 0, 0.999999, 0, 4, 0, -12, 0, -4.37113e-08, -9.5, 2, -0.434746 )
+transform = Transform( -5.68248e-07, 0, 1, 0, 4, 0, -13, 0, -4.37114e-08, -9.5, 2, 0 )
 width = 1.0
 height = 1.0
 depth = 1.0
@@ -106,7 +107,7 @@ depth = 1.0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -30.241 )
 
 [node name="Wall2" type="CSGBox" parent="CSGCombiner/RoomMid"]
-transform = Transform( -1.09278e-06, 0, 1, 0, 4, 0, -25, 0, -4.37114e-08, 9.5, 2, 6 )
+transform = Transform( -1.11464e-06, 0, 1, 0, 4, 0, -25.5, 0, -4.37114e-08, 9.5, 2, 6 )
 width = 1.0
 height = 1.0
 depth = 1.0
@@ -120,7 +121,7 @@ height = 1.0
 depth = 1.0
 
 [node name="Wall3" type="CSGBox" parent="CSGCombiner/RoomMid"]
-transform = Transform( -1.09278e-06, 0, 1, 0, 4, 0, -25, 0, -4.37114e-08, -9.5, 2, 6 )
+transform = Transform( -1.11464e-06, 0, 1, 0, 4, 0, -25.5, 0, -4.37114e-08, -9.5, 2, 6 )
 width = 1.0
 height = 1.0
 depth = 1.0
@@ -134,7 +135,7 @@ height = 1.0
 depth = 1.0
 
 [node name="Wall1" type="CSGBox" parent="CSGCombiner/RoomMid"]
-transform = Transform( 20, 0, 0, 0, 4, 0, 0, 0, 1, 0, 2, 18.5 )
+transform = Transform( 18, 0, 0, 0, 4, 0, 0, 0, 1, 0, 2, 18.5 )
 width = 1.0
 height = 1.0
 depth = 1.0
@@ -151,7 +152,7 @@ depth = 1.0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5 )
 
 [node name="Wall2" type="CSGBox" parent="CSGCombiner/Video Room"]
-transform = Transform( -1.09278e-06, 0, 1, 0, 4, 0, -25, 0, -4.37114e-08, 9.5, 2, 6 )
+transform = Transform( -1.09278e-06, 0, 1, 0, 4, 0, -25.0095, 0, -4.3728e-08, 9.5, 2, 6 )
 width = 1.0
 height = 1.0
 depth = 1.0
@@ -178,12 +179,8 @@ width = 1.0
 height = 1.0
 depth = 1.0
 
-[node name="Wall1" type="CSGBox" parent="CSGCombiner/Video Room"]
-transform = Transform( 20, 0, 0, 0, 4, 0, 0, 0, 1, 0.0319405, 2.04856, 18.507 )
-width = 1.0
-height = 1.0
-depth = 1.0
-material = SubResource( 2 )
-
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.385688, -1.90735e-06, -47.3026 )
