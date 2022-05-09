@@ -1,3 +1,189 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Level/dev_dark.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Level/dev_orange.png" type="Texture" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 2 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 3 )
+uv1_triplanar = true
 
 [node name="Level" type="Spatial"]
+
+[node name="CSGCombiner" type="CSGCombiner" parent="."]
+use_collision = true
+
+[node name="Outer Borders" type="CSGCombiner" parent="CSGCombiner"]
+transform = Transform( 0.8, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Floor" type="CSGBox" parent="CSGCombiner/Outer Borders"]
+transform = Transform( 100, 0, 0, 0, 1, 0, 0, 0, 100, 0, -1, 0 )
+width = 1.0
+depth = 1.0
+material = SubResource( 1 )
+
+[node name="Wall1" type="CSGBox" parent="CSGCombiner/Outer Borders"]
+transform = Transform( 70, 0, 0, 0, 4, 0, 0, 0, 1, 0, 2, -50 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall2" type="CSGBox" parent="CSGCombiner/Outer Borders"]
+transform = Transform( 70, 0, 0, 0, 4, -8.74227e-08, 0, 3.49691e-07, 1, 0, 2, 13.8002 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall3" type="CSGBox" parent="CSGCombiner/Outer Borders"]
+transform = Transform( -2.79753e-06, 0, 1, 0, 4, 0, -64, 0, -4.37114e-08, 35, 2, -18 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall4" type="CSGBox" parent="CSGCombiner/Outer Borders"]
+transform = Transform( -2.79753e-06, 0, 1, 0, 4, 0, -64, 0, -4.37114e-08, -35, 2, -18 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Entrance Room" type="CSGCombiner" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -43.1373 )
+
+[node name="Door_Entrance" type="CSGBox" parent="CSGCombiner/Entrance Room"]
+transform = Transform( 4.45404, 0, 0, 0, 3.01296, 0, 0, 0, 1.00432, 0, 1.5, -6.33149 )
+width = 1.0
+height = 1.0
+depth = 1.0
+
+[node name="Wall1" type="CSGBox" parent="CSGCombiner/Entrance Room"]
+transform = Transform( 20, 0, 0, 0, 4, 0, 0, 0, 1, 0, 2, 6 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall2" type="CSGBox" parent="CSGCombiner/Entrance Room"]
+transform = Transform( -5.24537e-07, 0, 0.999999, 0, 4, 0, -12, 0, -4.37113e-08, 9.5, 2, -0.434746 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall2_Sub" type="CSGBox" parent="CSGCombiner/Entrance Room"]
+transform = Transform( 1.22029, 0, 0, 0, 3.28312, 0, 0, 0, 4.95195, 9.5, 1.269, 1.15937 )
+operation = 2
+width = 1.0
+height = 1.0
+depth = 1.0
+
+[node name="Wall3" type="CSGBox" parent="CSGCombiner/Entrance Room"]
+transform = Transform( -5.24537e-07, 0, 0.999999, 0, 4, 0, -12, 0, -4.37113e-08, -9.5, 2, -0.434746 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall3_Sub" type="CSGBox" parent="CSGCombiner/Entrance Room"]
+transform = Transform( 1.22029, 0, 0, 0, 3.28312, 0, 0, 0, 4.95195, -9.5, 1.269, 1.15937 )
+operation = 2
+width = 1.0
+height = 1.0
+depth = 1.0
+
+[node name="CSGBox" type="CSGBox" parent="CSGCombiner/Entrance Room"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2 )
+width = 1.0
+depth = 1.0
+
+[node name="RoomMid" type="CSGCombiner" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -30.241 )
+
+[node name="Wall2" type="CSGBox" parent="CSGCombiner/RoomMid"]
+transform = Transform( -1.09278e-06, 0, 1, 0, 4, 0, -25, 0, -4.37114e-08, 9.5, 2, 6 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall2_Sub" type="CSGBox" parent="CSGCombiner/RoomMid"]
+transform = Transform( 1.22029, 0, 0, 0, 3.28312, 0, 0, 0, 4.95195, 9.5, 1.269, 8 )
+operation = 2
+width = 1.0
+height = 1.0
+depth = 1.0
+
+[node name="Wall3" type="CSGBox" parent="CSGCombiner/RoomMid"]
+transform = Transform( -1.09278e-06, 0, 1, 0, 4, 0, -25, 0, -4.37114e-08, -9.5, 2, 6 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall3_Sub" type="CSGBox" parent="CSGCombiner/RoomMid"]
+transform = Transform( 1.22029, 0, 0, 0, 3.28312, 0, 0, 0, 4.95195, -9.5, 1.269, 8 )
+operation = 2
+width = 1.0
+height = 1.0
+depth = 1.0
+
+[node name="Wall1" type="CSGBox" parent="CSGCombiner/RoomMid"]
+transform = Transform( 20, 0, 0, 0, 4, 0, 0, 0, 1, 0, 2, 18.5 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall1_Sub" type="CSGBox" parent="CSGCombiner/RoomMid"]
+transform = Transform( -5.33406e-08, 0, 4.95195, 0, 3.28312, 0, -1.22029, 0, -2.16457e-07, 0, 1.269, 18.5 )
+operation = 2
+width = 1.0
+height = 1.0
+depth = 1.0
+
+[node name="Video Room" type="CSGCombiner" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5 )
+
+[node name="Wall2" type="CSGBox" parent="CSGCombiner/Video Room"]
+transform = Transform( -1.09278e-06, 0, 1, 0, 4, 0, -25, 0, -4.37114e-08, 9.5, 2, 6 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall2_Sub" type="CSGBox" parent="CSGCombiner/Video Room"]
+transform = Transform( 1.22029, 0, 0, 0, 3.28312, 0, 0, 0, 4.95195, 9.5, 1.269, 0 )
+operation = 2
+width = 1.0
+height = 1.0
+depth = 1.0
+
+[node name="Wall3" type="CSGBox" parent="CSGCombiner/Video Room"]
+transform = Transform( -1.09278e-06, 0, 1, 0, 4, 0, -25, 0, -4.37114e-08, -9.5, 2, 6 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="Wall3_Sub" type="CSGBox" parent="CSGCombiner/Video Room"]
+transform = Transform( 1.22029, 0, 0, 0, 3.28312, 0, 0, 0, 4.95195, -9.5, 1.269, 0 )
+operation = 2
+width = 1.0
+height = 1.0
+depth = 1.0
+
+[node name="Wall1" type="CSGBox" parent="CSGCombiner/Video Room"]
+transform = Transform( 20, 0, 0, 0, 4, 0, 0, 0, 1, 0.0319405, 2.04856, 18.507 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0 )
