@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/UIManager/manager.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/UIManager/InfoPopUp.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/UIManager/VideoPopUp.tscn" type="PackedScene" id=3]
 
 [node name="UIManager" type="Control"]
 anchor_right = 1.0
@@ -23,9 +24,10 @@ valign = 1
 [node name="InfoPopUp" parent="." instance=ExtResource( 2 )]
 
 [node name="MiniMap" type="TextureRect" parent="."]
-anchor_left = 0.82
-anchor_top = 0.05
-anchor_right = 0.9
-anchor_bottom = 0.12
-margin_right = 40.0
-margin_bottom = 40.0
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -121.92
+margin_bottom = 82.0
+grow_horizontal = 0
+
+[node name="VideoPopUp" parent="." instance=ExtResource( 3 )]
