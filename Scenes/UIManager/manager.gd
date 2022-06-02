@@ -3,6 +3,7 @@ class_name UIManager
 
 onready var _PROMPT: Label = get_node("Prompt");
 onready var _INFO_POPUP: WindowDialog = get_node("InfoPopUp/WindowDialog");
+onready var _VIDEO_POPUP: WindowDialog = get_node("VideoPopUp/WindowDialog");
 onready var _MINIMAP: TextureRect = get_node("MiniMap");
 
 func check_input() -> void:
@@ -21,6 +22,11 @@ func _process(delta: float) -> void:
 	# The event checking should happen at the player,
 	# This is just for testing
 	check_input()
+
+func _ready() -> void:
+	_VIDEO_POPUP.connect("hide", self, "on_video_popup_close");
+	var video_stream = _VIDEO_POPUP.get_node("VideoPlayer");
+	video_stream.connect("finished", self, "on_video_finished");
 
 ## A helper method to get if the prompt is visible or not
 func active_prompt() -> bool:
@@ -50,6 +56,24 @@ func spawn_info(title: String, text: String) -> void:
 ## Set the texture of the minimap
 func set_minimap(texture: Texture) -> void:
 	_MINIMAP.texture = texture
+
+## Spawn a video popup with the given stream and start playing.
+func spawn_video(title: String, stream: VideoStream) -> void:
+	_VIDEO_POPUP.window_title = title;
+	_VIDEO_POPUP.popup_centered_ratio(0.6);
+
+	var video_stream: VideoPlayer = _VIDEO_POPUP.get_node("VideoPlayer");
+	video_stream.stream = stream;
+	video_stream.play();
+
+func on_video_popup_close() -> void:
+	# Automatically stop the video(, is this needed?)
+	var video_stream = _VIDEO_POPUP.get_node("VideoPlayer");
+	video_stream.stop();
+
+func on_video_finished() -> void:
+	# Automatically close pop-up when video ends
+	_VIDEO_POPUP.visible = false;
 
 func show_tip() -> void:
 	print("Hello from tip!")
