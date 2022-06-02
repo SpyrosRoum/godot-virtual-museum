@@ -21,3 +21,11 @@ align = 1
 valign = 1
 
 [node name="InfoPopUp" parent="." instance=ExtResource( 2 )]
+
+[node name="MiniMap" type="TextureRect" parent="."]
+anchor_left = 0.82
+anchor_top = 0.05
+anchor_right = 0.9
+anchor_bottom = 0.12
+margin_right = 40.0
+margin_bottom = 40.0

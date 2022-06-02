@@ -3,6 +3,7 @@ class_name UIManager
 
 onready var _PROMPT: Label = get_node("Prompt");
 onready var _INFO_POPUP: WindowDialog = get_node("InfoPopUp");
+onready var _MINIMAP: TextureRect = get_node("MiniMap");
 
 func check_input() -> void:
 	# This is just to check that prompt works correctly,
@@ -46,6 +47,10 @@ func spawn_info(title: String, text: String) -> void:
 	window.window_title = title;
 	window.popup_centered_ratio(0.6);
 	text_lbl.text = text;
+
+## Set the texture of the minimap
+func set_minimap(texture: Texture) -> void:
+	_MINIMAP.texture = texture
 
 func show_tip() -> void:
 	print("Hello from tip!")
