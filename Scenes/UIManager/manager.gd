@@ -2,7 +2,7 @@ extends Node
 class_name UIManager
 
 onready var _PROMPT: Label = get_node("Prompt");
-onready var _INFO_POPUP = get_node("InfoPopUp");
+onready var _INFO_POPUP: WindowDialog = get_node("InfoPopUp");
 
 func check_input() -> void:
 	# This is just to check that prompt works correctly,
@@ -24,6 +24,10 @@ func _process(delta: float) -> void:
 ## A helper method to get if the prompt is visible or not
 func active_prompt() -> bool:
 	return _PROMPT.visible
+
+## A helper method to get if info is visible or not
+func active_info() -> bool:
+	return _INFO_POPUP.visible;
 
 ## Set the text of the prompt to the given text and make it visible
 func spawn_prompt(text: String) -> void:
