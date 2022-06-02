@@ -2,7 +2,8 @@ extends Node
 class_name UIManager
 
 onready var _PROMPT: Label = get_node("Prompt");
-onready var _INFO_POPUP: WindowDialog = get_node("InfoPopUp");
+onready var _INFO_POPUP: WindowDialog = get_node("InfoPopUp/WindowDialog");
+onready var _MINIMAP: TextureRect = get_node("MiniMap");
 
 func check_input() -> void:
 	# This is just to check that prompt works correctly,
@@ -41,11 +42,14 @@ func destroy_prompt() -> void:
 ## Open a window with the given title and info text.
 ## Note that the text is BBCode enabled
 func spawn_info(title: String, text: String) -> void:
-	var window = _INFO_POPUP.get_node("WindowDialog");
-	var text_lbl = _INFO_POPUP.get_node("WindowDialog/RichTextLabel");
-	window.window_title = title;
-	window.popup_centered_ratio(0.6);
+	var text_lbl = _INFO_POPUP.get_node("RichTextLabel");
+	_INFO_POPUP.window_title = title;
+	_INFO_POPUP.popup_centered_ratio(0.6);
 	text_lbl.text = text;
+
+## Set the texture of the minimap
+func set_minimap(texture: Texture) -> void:
+	_MINIMAP.texture = texture
 
 func show_tip() -> void:
 	print("Hello from tip!")
