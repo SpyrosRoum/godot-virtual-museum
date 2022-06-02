@@ -6,6 +6,8 @@ export(float, 1.0, 1.5, 0.1) var move_speed: float = 1
 export var decceleration: float = 0.8
 export var mouse_sensitivity: float = 0.1
 
+export(NodePath) onready var ui_manager = get_node(ui_manager) as UIManager
+
 var velocity: Vector3 = Vector3.ZERO
 
 func _ready() -> void:
@@ -13,6 +15,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	movement(delta)
+	ui_manager.set_minimap(get_node("Viewport").get_texture())
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:

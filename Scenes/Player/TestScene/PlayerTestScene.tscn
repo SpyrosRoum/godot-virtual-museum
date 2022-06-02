@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/Player/TestScene/dev_dark.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player/TestScene/Wall.material" type="Material" id=2]
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/UIManager/UIManager.tscn" type="PackedScene" id=4]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 1 )
@@ -12,6 +13,8 @@ uv1_triplanar = true
 size = Vector3( 1, 1, 1 )
 
 [node name="PlayerTestScene" type="Spatial"]
+
+[node name="UIManager" parent="." instance=ExtResource( 4 )]
 
 [node name="CSGCombiner" type="CSGCombiner" parent="."]
 use_collision = true
@@ -100,6 +103,7 @@ material = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 transform = Transform( 0.999682, 0, 0.0251999, 0, 1, 0, -0.0251999, 0, 0.999682, 17.5628, 4.46506, 11.4485 )
+ui_manager = NodePath("../UIManager")
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 0.999776, -0.0119494, 0.0174941, -0.0195946, -0.835521, 0.54911, 0.00805516, -0.549329, -0.835567, 0, 2.67279, 0 )
