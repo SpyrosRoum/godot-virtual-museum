@@ -6,27 +6,13 @@ onready var _INFO_POPUP: WindowDialog = get_node("InfoPopUp/WindowDialog");
 onready var _VIDEO_POPUP: WindowDialog = get_node("VideoPopUp/WindowDialog");
 onready var _MINIMAP: TextureRect = get_node("MiniMap");
 
-func check_input() -> void:
-	# This is just to check that prompt works correctly,
-	# the trigger for the prompt will be the user looking at something eventually
-	if Input.is_action_just_pressed("test_toggle_prompt"):
-		if !active_prompt():
-			spawn_prompt("Press `E` to interact")
-		else:
-			destroy_prompt();
-
-	if Input.is_action_just_pressed("interact"):
-		spawn_info("Title", "text");
-
-func _process(delta: float) -> void:
-	# The event checking should happen at the player,
-	# This is just for testing
-	check_input()
-
 func _ready() -> void:
-	_VIDEO_POPUP.connect("hide", self, "on_video_popup_close");
+	_VIDEO_POPUP.connect("popup_hide", self, "on_video_popup_close");
 	var video_stream = _VIDEO_POPUP.get_node("VideoPlayer");
 	video_stream.connect("finished", self, "on_video_finished");
+
+	_VIDEO_POPUP.connect("popup_hide", self, "on_generic_popup_close");
+	_INFO_POPUP.connect("popup_hide", self, "on_generic_popup_close");
 
 ## A helper method to get if the prompt is visible or not
 func active_prompt() -> bool:
@@ -65,6 +51,10 @@ func spawn_video(title: String, stream: VideoStream) -> void:
 	var video_stream: VideoPlayer = _VIDEO_POPUP.get_node("VideoPlayer");
 	video_stream.stream = stream;
 	video_stream.play();
+
+func on_generic_popup_close() -> void:
+	# Capture the mouse!
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func on_video_popup_close() -> void:
 	# Automatically stop the video(, is this needed?)
