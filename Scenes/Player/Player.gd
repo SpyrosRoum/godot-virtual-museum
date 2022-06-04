@@ -41,7 +41,7 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("interact"):
 		if active_exhibit != null and !ui_manager.active_popup():
 			var data = active_exhibit.exhibit_data
-			ui_manager.spawn_info(data.name, data.description)
+			ui_manager.spawn_info(data)
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func mouse_look(mouse_movement: Vector2) -> void:

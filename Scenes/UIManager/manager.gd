@@ -5,6 +5,8 @@ onready var _PROMPT: Label = get_node("Prompt");
 onready var _INFO_POPUP: WindowDialog = get_node("InfoPopUp/WindowDialog");
 onready var _VIDEO_POPUP: WindowDialog = get_node("VideoPopUp/WindowDialog");
 onready var _MINIMAP: TextureRect = get_node("MiniMap");
+# What is the current item
+var _CURRENT_ITEM: ExhibitData = null;
 
 func _ready() -> void:
 	_VIDEO_POPUP.connect("popup_hide", self, "on_video_popup_close");
@@ -13,6 +15,7 @@ func _ready() -> void:
 
 	_VIDEO_POPUP.connect("popup_hide", self, "on_generic_popup_close");
 	_INFO_POPUP.connect("popup_hide", self, "on_generic_popup_close");
+	_INFO_POPUP.get_node("VBoxContainer/Button").connect("button_up", self, "_on_add_to_cart");
 
 ## A helper method to get if the prompt is visible or not
 func active_prompt() -> bool:
@@ -33,11 +36,12 @@ func destroy_prompt() -> void:
 
 ## Open a window with the given title and info text.
 ## Note that the text is BBCode enabled
-func spawn_info(title: String, text: String) -> void:
-	var text_lbl = _INFO_POPUP.get_node("RichTextLabel");
-	_INFO_POPUP.window_title = title;
+func spawn_info(data: ExhibitData) -> void:
+	_CURRENT_ITEM = data;
+	var text_lbl = _INFO_POPUP.get_node("VBoxContainer/RichTextLabel");
+	_INFO_POPUP.window_title = data.name;
 	_INFO_POPUP.popup_centered_ratio(0.6);
-	text_lbl.text = text;
+	text_lbl.text = data.description;
 
 ## Set the texture of the minimap
 func set_minimap(texture: Texture) -> void:
@@ -60,6 +64,12 @@ func on_video_popup_close() -> void:
 	# Automatically stop the video(, is this needed?)
 	var video_stream = _VIDEO_POPUP.get_node("VideoPlayer");
 	video_stream.stop();
+
+func _on_add_to_cart() -> void:
+	if _CURRENT_ITEM == null:
+		# This really shouldn't happen
+		return;
+	print("foo");
 
 func on_video_finished() -> void:
 	# Automatically close pop-up when video ends
