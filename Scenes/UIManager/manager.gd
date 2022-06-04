@@ -7,13 +7,12 @@ onready var _VIDEO_POPUP: WindowDialog = get_node("VideoPopUp/WindowDialog");
 onready var _MINIMAP: TextureRect = get_node("MiniMap");
 
 func _ready() -> void:
-	_VIDEO_POPUP.connect("hide", self, "on_video_popup_close");
+	_VIDEO_POPUP.connect("popup_hide", self, "on_video_popup_close");
 	var video_stream = _VIDEO_POPUP.get_node("VideoPlayer");
 	video_stream.connect("finished", self, "on_video_finished");
 
-	_VIDEO_POPUP.connect("hide", self, "on_generic_popup_close");
-	_INFO_POPUP.connect("hide", self, "on_generic_popup_close");
-
+	_VIDEO_POPUP.connect("popup_hide", self, "on_generic_popup_close");
+	_INFO_POPUP.connect("popup_hide", self, "on_generic_popup_close");
 
 ## A helper method to get if the prompt is visible or not
 func active_prompt() -> bool:
