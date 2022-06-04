@@ -1,6 +1,6 @@
 extends Resource
 class_name ExhibitData
 
-export var id: int
+export var id: String
 export var name: String
 export(String, MULTILINE) var description: String

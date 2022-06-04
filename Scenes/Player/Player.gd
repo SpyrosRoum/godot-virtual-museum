@@ -24,7 +24,7 @@ func _process(delta: float) -> void:
 
 func check_exhibit() -> void:
 	if ray.is_colliding():
-		var obj = ray.get_collider()
+		var obj = ray.get_collider().get_parent()
 		if active_exhibit == null and obj is Exhibit:
 			active_exhibit = obj as Exhibit
 			ui_manager.spawn_prompt("Interact with %s" % [active_exhibit.exhibit_data.name])
