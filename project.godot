@@ -59,6 +59,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
 }, {
+"base": "StaticBody",
+"class": "Exhibit",
+"language": "GDScript",
+"path": "res://Scripts/Exhibit.gd"
+}, {
+"base": "Resource",
+"class": "ExhibitData",
+"language": "GDScript",
+"path": "res://Scripts/ExhibitResource.gd"
+}, {
 "base": "PanelContainer",
 "class": "HistoryRow",
 "language": "GDScript",
@@ -80,6 +90,8 @@ _global_script_class_icons={
 "DialogicParser": "",
 "DialogicResources": "",
 "DialogicUtil": "",
+"Exhibit": "",
+"ExhibitData": "",
 "HistoryRow": "",
 "UIManager": ""
 }
