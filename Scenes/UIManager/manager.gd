@@ -65,5 +65,3 @@ func on_video_finished() -> void:
 	# Automatically close pop-up when video ends
 	_VIDEO_POPUP.visible = false;
 
-func show_tip() -> void:
-	print("Hello from tip!")
