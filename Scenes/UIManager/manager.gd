@@ -18,9 +18,9 @@ func _ready() -> void:
 func active_prompt() -> bool:
 	return _PROMPT.visible
 
-## A helper method to get if info is visible or not
-func active_info() -> bool:
-	return _INFO_POPUP.visible;
+## A helper method to get if there is any visible popup
+func active_popup() -> bool:
+	return _INFO_POPUP.visible or _VIDEO_POPUP.visible;
 
 ## Set the text of the prompt to the given text and make it visible
 func spawn_prompt(text: String) -> void:
@@ -64,4 +64,3 @@ func on_video_popup_close() -> void:
 func on_video_finished() -> void:
 	# Automatically close pop-up when video ends
 	_VIDEO_POPUP.visible = false;
-
