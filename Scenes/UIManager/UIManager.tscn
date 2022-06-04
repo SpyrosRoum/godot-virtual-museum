@@ -43,3 +43,16 @@ margin_bottom = 82.0
 grow_horizontal = 0
 
 [node name="VideoPopUp" parent="." instance=ExtResource( 3 )]
+
+[node name="HelpPrompt" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -119.0
+margin_top = -24.0
+margin_right = -10.0
+margin_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Press F1 for Help"
