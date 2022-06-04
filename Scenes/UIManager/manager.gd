@@ -5,6 +5,7 @@ onready var _PROMPT: Label = get_node("Prompt");
 onready var _INFO_POPUP: WindowDialog = get_node("InfoPopUp/WindowDialog");
 onready var _VIDEO_POPUP: WindowDialog = get_node("VideoPopUp/WindowDialog");
 onready var _MINIMAP: TextureRect = get_node("MiniMap");
+onready var _CART_ITEMS: Label = get_node("CartPrompt/HBoxContainer/ItemCount");
 # What is the current item
 var _CURRENT_ITEM: ExhibitData = null;
 
@@ -69,7 +70,8 @@ func _on_add_to_cart() -> void:
 	if _CURRENT_ITEM == null:
 		# This really shouldn't happen
 		return;
-	print("foo");
+	CART.add_to_cart(_CURRENT_ITEM);
+	_CART_ITEMS.set_text(String(CART.items.size()));
 
 func on_video_finished() -> void:
 	# Automatically close pop-up when video ends
