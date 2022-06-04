@@ -28,6 +28,10 @@ func _ready() -> void:
 	var video_stream = _VIDEO_POPUP.get_node("VideoPlayer");
 	video_stream.connect("finished", self, "on_video_finished");
 
+	_VIDEO_POPUP.connect("hide", self, "on_generic_popup_close");
+	_INFO_POPUP.connect("hide", self, "on_generic_popup_close");
+
+
 ## A helper method to get if the prompt is visible or not
 func active_prompt() -> bool:
 	return _PROMPT.visible
@@ -65,6 +69,10 @@ func spawn_video(title: String, stream: VideoStream) -> void:
 	var video_stream: VideoPlayer = _VIDEO_POPUP.get_node("VideoPlayer");
 	video_stream.stream = stream;
 	video_stream.play();
+
+func on_generic_popup_close() -> void:
+	# Capture the mouse!
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func on_video_popup_close() -> void:
 	# Automatically stop the video(, is this needed?)
