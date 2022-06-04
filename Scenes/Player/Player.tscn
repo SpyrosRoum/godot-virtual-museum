@@ -49,6 +49,7 @@ player = NodePath("..")
 
 [node name="Camera" type="Camera" parent="Viewport"]
 transform = Transform( -1, 1.50996e-07, 6.60024e-15, 0, -4.37114e-08, 1, 1.50996e-07, 1, 4.37114e-08, 0, 9.39755, 0 )
+cull_mask = 1048573
 environment = SubResource( 5 )
 projection = 1
 size = 12.0
