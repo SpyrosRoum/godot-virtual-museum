@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TilesMarbleSageGreenBrickBondHoned001_flat.jpg-547f812439c1cb340109031bae73ec7f.stex"
+path="res://.import/TilesMarbleSageGreenBrickBondHoned001_flat.jpg-b6cac4de03ea52a05d88fc18769216a3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MarbleWalls/TilesMarbleSageGreenBrickBondHoned001_flat.jpg"
-dest_files=[ "res://.import/TilesMarbleSageGreenBrickBondHoned001_flat.jpg-547f812439c1cb340109031bae73ec7f.stex" ]
+source_file="res://assets/MarbleWalls/TilesMarbleSageGreenBrickBondHoned001_flat.jpg"
+dest_files=[ "res://.import/TilesMarbleSageGreenBrickBondHoned001_flat.jpg-b6cac4de03ea52a05d88fc18769216a3.stex" ]
 
 [params]
 

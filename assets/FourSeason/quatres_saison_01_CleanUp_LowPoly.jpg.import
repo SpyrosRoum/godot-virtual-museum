@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/quatres_saison_01_CleanUp_LowPoly.jpg-bc76f949e74c437a96c9a5289c42f13b.s3tc.stex"
-path.etc2="res://.import/quatres_saison_01_CleanUp_LowPoly.jpg-bc76f949e74c437a96c9a5289c42f13b.etc2.stex"
+path.s3tc="res://.import/quatres_saison_01_CleanUp_LowPoly.jpg-6683fb10d52d27e9b0c84307b1596f82.s3tc.stex"
+path.etc2="res://.import/quatres_saison_01_CleanUp_LowPoly.jpg-6683fb10d52d27e9b0c84307b1596f82.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/FourSeason/quatres_saison_01_CleanUp_LowPoly.jpg"
-dest_files=[ "res://.import/quatres_saison_01_CleanUp_LowPoly.jpg-bc76f949e74c437a96c9a5289c42f13b.s3tc.stex", "res://.import/quatres_saison_01_CleanUp_LowPoly.jpg-bc76f949e74c437a96c9a5289c42f13b.etc2.stex" ]
+source_file="res://assets/FourSeason/quatres_saison_01_CleanUp_LowPoly.jpg"
+dest_files=[ "res://.import/quatres_saison_01_CleanUp_LowPoly.jpg-6683fb10d52d27e9b0c84307b1596f82.s3tc.stex", "res://.import/quatres_saison_01_CleanUp_LowPoly.jpg-6683fb10d52d27e9b0c84307b1596f82.etc2.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/idyl.gltf-d5899b94fe38455c256e9d31f438c85a.scn"
+path="res://.import/idyl.gltf-f1f78ca2305065cd141b2d02c892a1b4.scn"
 
 [deps]
 
-source_file="res://Assets/Idyl/idyl.gltf"
-dest_files=[ "res://.import/idyl.gltf-d5899b94fe38455c256e9d31f438c85a.scn" ]
+source_file="res://assets/Idyl/idyl.gltf"
+dest_files=[ "res://.import/idyl.gltf-f1f78ca2305065cd141b2d02c892a1b4.scn" ]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg-5cab9240a5981a32aad228bfb300fe74.s3tc.stex"
-path.etc2="res://.import/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg-5cab9240a5981a32aad228bfb300fe74.etc2.stex"
+path.s3tc="res://.import/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg-d9e90e06f4d7d789037d64957655f3eb.s3tc.stex"
+path.etc2="res://.import/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg-d9e90e06f4d7d789037d64957655f3eb.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Paintings/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg"
-dest_files=[ "res://.import/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg-5cab9240a5981a32aad228bfb300fe74.s3tc.stex", "res://.import/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg-5cab9240a5981a32aad228bfb300fe74.etc2.stex" ]
+source_file="res://assets/Paintings/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg"
+dest_files=[ "res://.import/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg-d9e90e06f4d7d789037d64957655f3eb.s3tc.stex", "res://.import/Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg-d9e90e06f4d7d789037d64957655f3eb.etc2.stex" ]
 
 [params]
 

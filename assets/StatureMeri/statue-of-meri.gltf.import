@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/statue-of-meri.gltf-88f213a1ccead4b4f60b0c14094a7a54.scn"
+path="res://.import/statue-of-meri.gltf-ff74947d37115ddcd40af34005fdf252.scn"
 
 [deps]
 
-source_file="res://Assets/StatureMeri/statue-of-meri.gltf"
-dest_files=[ "res://.import/statue-of-meri.gltf-88f213a1ccead4b4f60b0c14094a7a54.scn" ]
+source_file="res://assets/StatureMeri/statue-of-meri.gltf"
+dest_files=[ "res://.import/statue-of-meri.gltf-ff74947d37115ddcd40af34005fdf252.scn" ]
 
 [params]
 

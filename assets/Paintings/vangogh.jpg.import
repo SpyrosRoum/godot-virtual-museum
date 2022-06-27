@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/vangogh.jpg-e33674e7fb0ab2171d6c1f0955e9af2d.s3tc.stex"
-path.etc2="res://.import/vangogh.jpg-e33674e7fb0ab2171d6c1f0955e9af2d.etc2.stex"
+path.s3tc="res://.import/vangogh.jpg-3811e2fb1b7e1275c397eb98f6c7e45a.s3tc.stex"
+path.etc2="res://.import/vangogh.jpg-3811e2fb1b7e1275c397eb98f6c7e45a.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Paintings/vangogh.jpg"
-dest_files=[ "res://.import/vangogh.jpg-e33674e7fb0ab2171d6c1f0955e9af2d.s3tc.stex", "res://.import/vangogh.jpg-e33674e7fb0ab2171d6c1f0955e9af2d.etc2.stex" ]
+source_file="res://assets/Paintings/vangogh.jpg"
+dest_files=[ "res://.import/vangogh.jpg-3811e2fb1b7e1275c397eb98f6c7e45a.s3tc.stex", "res://.import/vangogh.jpg-3811e2fb1b7e1275c397eb98f6c7e45a.etc2.stex" ]
 
 [params]
 

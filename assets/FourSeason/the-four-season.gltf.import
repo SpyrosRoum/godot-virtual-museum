@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/the-four-season.gltf-d1619ffb87de25988f0ade945c1976c6.scn"
+path="res://.import/the-four-season.gltf-16c83f8c05f19e61e92ca834e738eeb7.scn"
 
 [deps]
 
-source_file="res://Assets/FourSeason/the-four-season.gltf"
-dest_files=[ "res://.import/the-four-season.gltf-d1619ffb87de25988f0ade945c1976c6.scn" ]
+source_file="res://assets/FourSeason/the-four-season.gltf"
+dest_files=[ "res://.import/the-four-season.gltf-16c83f8c05f19e61e92ca834e738eeb7.scn" ]
 
 [params]
 

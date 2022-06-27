@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/armchair01.gltf-8fa8009b2e3a0a396407380cc3cfa716.scn"
+path="res://.import/armchair01.gltf-a62bd19083036706326d6821fcebfab4.scn"
 
 [deps]
 
-source_file="res://Assets/Chair/armchair01.gltf"
-dest_files=[ "res://.import/armchair01.gltf-8fa8009b2e3a0a396407380cc3cfa716.scn" ]
+source_file="res://assets/Chair/armchair01.gltf"
+dest_files=[ "res://.import/armchair01.gltf-a62bd19083036706326d6821fcebfab4.scn" ]
 
 [params]
 

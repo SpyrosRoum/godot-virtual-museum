@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/monalisa.jpg-13f1b461b52a59dc0b2ad28093602756.s3tc.stex"
-path.etc2="res://.import/monalisa.jpg-13f1b461b52a59dc0b2ad28093602756.etc2.stex"
+path.s3tc="res://.import/monalisa.jpg-4c8674173912c84d8425107ffc2c1642.s3tc.stex"
+path.etc2="res://.import/monalisa.jpg-4c8674173912c84d8425107ffc2c1642.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Paintings/monalisa.jpg"
-dest_files=[ "res://.import/monalisa.jpg-13f1b461b52a59dc0b2ad28093602756.s3tc.stex", "res://.import/monalisa.jpg-13f1b461b52a59dc0b2ad28093602756.etc2.stex" ]
+source_file="res://assets/Paintings/monalisa.jpg"
+dest_files=[ "res://.import/monalisa.jpg-4c8674173912c84d8425107ffc2c1642.s3tc.stex", "res://.import/monalisa.jpg-4c8674173912c84d8425107ffc2c1642.etc2.stex" ]
 
 [params]
 

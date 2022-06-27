@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/scene-of-the-deluge.gltf-701916028a3f00e09aa1ae98d6f750dd.scn"
+path="res://.import/scene-of-the-deluge.gltf-e2fb77a86429791db6f952268d4cb163.scn"
 
 [deps]
 
-source_file="res://Assets/Deluge/scene-of-the-deluge.gltf"
-dest_files=[ "res://.import/scene-of-the-deluge.gltf-701916028a3f00e09aa1ae98d6f750dd.scn" ]
+source_file="res://assets/Deluge/scene-of-the-deluge.gltf"
+dest_files=[ "res://.import/scene-of-the-deluge.gltf-e2fb77a86429791db6f952268d4cb163.scn" ]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg-37aa8b86d1ddd25c3a29fdf2465a8b0b.s3tc.stex"
-path.etc2="res://.import/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg-37aa8b86d1ddd25c3a29fdf2465a8b0b.etc2.stex"
+path.s3tc="res://.import/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg-75903a132d2cdb4720d9758b95c81b43.s3tc.stex"
+path.etc2="res://.import/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg-75903a132d2cdb4720d9758b95c81b43.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Paintings/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg"
-dest_files=[ "res://.import/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg-37aa8b86d1ddd25c3a29fdf2465a8b0b.s3tc.stex", "res://.import/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg-37aa8b86d1ddd25c3a29fdf2465a8b0b.etc2.stex" ]
+source_file="res://assets/Paintings/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg"
+dest_files=[ "res://.import/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg-75903a132d2cdb4720d9758b95c81b43.s3tc.stex", "res://.import/Creation-of-Adam-fresco-painted-by-Michelangelo-1475-1564-Wikipedia-scaled.jpg-75903a132d2cdb4720d9758b95c81b43.etc2.stex" ]
 
 [params]
 

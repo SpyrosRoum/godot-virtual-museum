@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Marble062_Flat.jpg-4cbfdf419cdc0155b50b1bb5b569b346.stex"
+path="res://.import/Marble062_Flat.jpg-481d2b263b045ed47e3438dbba5c40ae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MarbleFloor/Marble062_Flat.jpg"
-dest_files=[ "res://.import/Marble062_Flat.jpg-4cbfdf419cdc0155b50b1bb5b569b346.stex" ]
+source_file="res://assets/MarbleFloor/Marble062_Flat.jpg"
+dest_files=[ "res://.import/Marble062_Flat.jpg-481d2b263b045ed47e3438dbba5c40ae.stex" ]
 
 [params]
 

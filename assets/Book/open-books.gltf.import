@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/open-books.gltf-f9024e487a4351c314ed06ab3d21a575.scn"
+path="res://.import/open-books.gltf-36ce3fc52729f3d7dc44398f579ef59d.scn"
 
 [deps]
 
-source_file="res://Assets/Book/open-books.gltf"
-dest_files=[ "res://.import/open-books.gltf-f9024e487a4351c314ed06ab3d21a575.scn" ]
+source_file="res://assets/Book/open-books.gltf"
+dest_files=[ "res://.import/open-books.gltf-36ce3fc52729f3d7dc44398f579ef59d.scn" ]
 
 [params]
 

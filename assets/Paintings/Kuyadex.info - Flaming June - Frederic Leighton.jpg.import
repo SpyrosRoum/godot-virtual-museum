@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Kuyadex.info - Flaming June - Frederic Leighton.jpg-e5a86a8dd9a54139d0b0a98fde7470b1.s3tc.stex"
-path.etc2="res://.import/Kuyadex.info - Flaming June - Frederic Leighton.jpg-e5a86a8dd9a54139d0b0a98fde7470b1.etc2.stex"
+path.s3tc="res://.import/Kuyadex.info - Flaming June - Frederic Leighton.jpg-cf19a989289eb87a22237998102d6b4c.s3tc.stex"
+path.etc2="res://.import/Kuyadex.info - Flaming June - Frederic Leighton.jpg-cf19a989289eb87a22237998102d6b4c.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Paintings/Kuyadex.info - Flaming June - Frederic Leighton.jpg"
-dest_files=[ "res://.import/Kuyadex.info - Flaming June - Frederic Leighton.jpg-e5a86a8dd9a54139d0b0a98fde7470b1.s3tc.stex", "res://.import/Kuyadex.info - Flaming June - Frederic Leighton.jpg-e5a86a8dd9a54139d0b0a98fde7470b1.etc2.stex" ]
+source_file="res://assets/Paintings/Kuyadex.info - Flaming June - Frederic Leighton.jpg"
+dest_files=[ "res://.import/Kuyadex.info - Flaming June - Frederic Leighton.jpg-cf19a989289eb87a22237998102d6b4c.s3tc.stex", "res://.import/Kuyadex.info - Flaming June - Frederic Leighton.jpg-cf19a989289eb87a22237998102d6b4c.etc2.stex" ]
 
 [params]
 

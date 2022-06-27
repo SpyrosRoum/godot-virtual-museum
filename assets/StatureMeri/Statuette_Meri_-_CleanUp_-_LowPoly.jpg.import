@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Statuette_Meri_-_CleanUp_-_LowPoly.jpg-3a26acb969bb33616dcb569ba20374a9.s3tc.stex"
-path.etc2="res://.import/Statuette_Meri_-_CleanUp_-_LowPoly.jpg-3a26acb969bb33616dcb569ba20374a9.etc2.stex"
+path.s3tc="res://.import/Statuette_Meri_-_CleanUp_-_LowPoly.jpg-72187dcc45377bd1bd5c0978822aa650.s3tc.stex"
+path.etc2="res://.import/Statuette_Meri_-_CleanUp_-_LowPoly.jpg-72187dcc45377bd1bd5c0978822aa650.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/StatureMeri/Statuette_Meri_-_CleanUp_-_LowPoly.jpg"
-dest_files=[ "res://.import/Statuette_Meri_-_CleanUp_-_LowPoly.jpg-3a26acb969bb33616dcb569ba20374a9.s3tc.stex", "res://.import/Statuette_Meri_-_CleanUp_-_LowPoly.jpg-3a26acb969bb33616dcb569ba20374a9.etc2.stex" ]
+source_file="res://assets/StatureMeri/Statuette_Meri_-_CleanUp_-_LowPoly.jpg"
+dest_files=[ "res://.import/Statuette_Meri_-_CleanUp_-_LowPoly.jpg-72187dcc45377bd1bd5c0978822aa650.s3tc.stex", "res://.import/Statuette_Meri_-_CleanUp_-_LowPoly.jpg-72187dcc45377bd1bd5c0978822aa650.etc2.stex" ]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg-3de06a3cdd6c19cc84ab1debac7d2140.s3tc.stex"
-path.etc2="res://.import/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg-3de06a3cdd6c19cc84ab1debac7d2140.etc2.stex"
+path.s3tc="res://.import/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg-6213170dc6c1b2e01615100406e32aa4.s3tc.stex"
+path.etc2="res://.import/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg-6213170dc6c1b2e01615100406e32aa4.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Paintings/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg"
-dest_files=[ "res://.import/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg-3de06a3cdd6c19cc84ab1debac7d2140.s3tc.stex", "res://.import/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg-3de06a3cdd6c19cc84ab1debac7d2140.etc2.stex" ]
+source_file="res://assets/Paintings/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg"
+dest_files=[ "res://.import/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg-6213170dc6c1b2e01615100406e32aa4.s3tc.stex", "res://.import/Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg-6213170dc6c1b2e01615100406e32aa4.etc2.stex" ]
 
 [params]
 
