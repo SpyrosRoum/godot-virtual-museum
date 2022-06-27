@@ -72,4 +72,3 @@ func _on_add_to_cart() -> void:
 func on_video_finished() -> void:
 	# Automatically close pop-up when video ends
 	_VIDEO_POPUP.visible = false;
-

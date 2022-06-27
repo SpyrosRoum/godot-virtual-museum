@@ -15,5 +15,6 @@ text = "[Cart Icon]"
 
 [node name="ItemCount" type="Label" parent="HBoxContainer"]
 margin_left = 69.0
-margin_right = 69.0
+margin_right = 77.0
 margin_bottom = 14.0
+text = "0"
