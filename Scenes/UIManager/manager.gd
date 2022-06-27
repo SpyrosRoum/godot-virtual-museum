@@ -18,10 +18,6 @@ func _ready() -> void:
 	_INFO_POPUP.connect("popup_hide", self, "on_generic_popup_close");
 	_INFO_POPUP.get_node("VBoxContainer/Button").connect("button_up", self, "_on_add_to_cart");
 
-## A helper method to get if the prompt is visible or not
-func active_prompt() -> bool:
-	return _PROMPT.visible
-
 ## A helper method to get if there is any visible popup
 func active_popup() -> bool:
 	return _INFO_POPUP.visible or _VIDEO_POPUP.visible;
@@ -76,3 +72,4 @@ func _on_add_to_cart() -> void:
 func on_video_finished() -> void:
 	# Automatically close pop-up when video ends
 	_VIDEO_POPUP.visible = false;
+
