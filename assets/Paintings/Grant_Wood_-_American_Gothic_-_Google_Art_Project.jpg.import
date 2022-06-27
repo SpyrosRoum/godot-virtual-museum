@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg-39c50e770e43e0528e2c0507cb40e1f5.s3tc.stex"
-path.etc2="res://.import/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg-39c50e770e43e0528e2c0507cb40e1f5.etc2.stex"
+path.s3tc="res://.import/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg-0fdcf3de95c3ca3344ed86169ff6cfbb.s3tc.stex"
+path.etc2="res://.import/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg-0fdcf3de95c3ca3344ed86169ff6cfbb.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Paintings/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg"
-dest_files=[ "res://.import/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg-39c50e770e43e0528e2c0507cb40e1f5.s3tc.stex", "res://.import/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg-39c50e770e43e0528e2c0507cb40e1f5.etc2.stex" ]
+source_file="res://Assets/Paintings/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg"
+dest_files=[ "res://.import/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg-0fdcf3de95c3ca3344ed86169ff6cfbb.s3tc.stex", "res://.import/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg-0fdcf3de95c3ca3344ed86169ff6cfbb.etc2.stex" ]
 
 [params]
 

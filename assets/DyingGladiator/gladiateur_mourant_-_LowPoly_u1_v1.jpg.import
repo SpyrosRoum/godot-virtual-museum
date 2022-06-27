@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/gladiateur_mourant_-_LowPoly_u1_v1.jpg-85b2148b62af132c1148ab88b675b197.s3tc.stex"
-path.etc2="res://.import/gladiateur_mourant_-_LowPoly_u1_v1.jpg-85b2148b62af132c1148ab88b675b197.etc2.stex"
+path.s3tc="res://.import/gladiateur_mourant_-_LowPoly_u1_v1.jpg-156bf4bf05bcd15cf1850d3582cab2c4.s3tc.stex"
+path.etc2="res://.import/gladiateur_mourant_-_LowPoly_u1_v1.jpg-156bf4bf05bcd15cf1850d3582cab2c4.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/DyingGladiator/gladiateur_mourant_-_LowPoly_u1_v1.jpg"
-dest_files=[ "res://.import/gladiateur_mourant_-_LowPoly_u1_v1.jpg-85b2148b62af132c1148ab88b675b197.s3tc.stex", "res://.import/gladiateur_mourant_-_LowPoly_u1_v1.jpg-85b2148b62af132c1148ab88b675b197.etc2.stex" ]
+source_file="res://Assets/DyingGladiator/gladiateur_mourant_-_LowPoly_u1_v1.jpg"
+dest_files=[ "res://.import/gladiateur_mourant_-_LowPoly_u1_v1.jpg-156bf4bf05bcd15cf1850d3582cab2c4.s3tc.stex", "res://.import/gladiateur_mourant_-_LowPoly_u1_v1.jpg-156bf4bf05bcd15cf1850d3582cab2c4.etc2.stex" ]
 
 [params]
 

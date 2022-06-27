@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/the-blind-man.gltf-4ae7fd54e48fd58356855519a0308b79.scn"
+path="res://.import/the-blind-man.gltf-c768e790d47c9c966635423bd3823a51.scn"
 
 [deps]
 
-source_file="res://assets/BlindMan/the-blind-man.gltf"
-dest_files=[ "res://.import/the-blind-man.gltf-4ae7fd54e48fd58356855519a0308b79.scn" ]
+source_file="res://Assets/BlindMan/the-blind-man.gltf"
+dest_files=[ "res://.import/the-blind-man.gltf-c768e790d47c9c966635423bd3823a51.scn" ]
 
 [params]
 

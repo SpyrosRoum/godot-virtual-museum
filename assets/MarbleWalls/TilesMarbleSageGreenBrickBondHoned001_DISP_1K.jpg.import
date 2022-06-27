@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg-972a5ad5f8938758f80b3be0813bbc01.s3tc.stex"
-path.etc2="res://.import/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg-972a5ad5f8938758f80b3be0813bbc01.etc2.stex"
+path.s3tc="res://.import/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg-6a6db10b8a6312ea88b18703c70ba8cf.s3tc.stex"
+path.etc2="res://.import/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg-6a6db10b8a6312ea88b18703c70ba8cf.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/MarbleWalls/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg"
-dest_files=[ "res://.import/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg-972a5ad5f8938758f80b3be0813bbc01.s3tc.stex", "res://.import/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg-972a5ad5f8938758f80b3be0813bbc01.etc2.stex" ]
+source_file="res://Assets/MarbleWalls/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg"
+dest_files=[ "res://.import/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg-6a6db10b8a6312ea88b18703c70ba8cf.s3tc.stex", "res://.import/TilesMarbleSageGreenBrickBondHoned001_DISP_1K.jpg-6a6db10b8a6312ea88b18703c70ba8cf.etc2.stex" ]
 
 [params]
 

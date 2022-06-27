@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/thescrea,.jpg-3f4d02a16e4004e36a2f0b0ce667492d.s3tc.stex"
-path.etc2="res://.import/thescrea,.jpg-3f4d02a16e4004e36a2f0b0ce667492d.etc2.stex"
+path.s3tc="res://.import/thescrea,.jpg-78c156604f5214c03b05172d6c4e92a3.s3tc.stex"
+path.etc2="res://.import/thescrea,.jpg-78c156604f5214c03b05172d6c4e92a3.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Paintings/thescrea,.jpg"
-dest_files=[ "res://.import/thescrea,.jpg-3f4d02a16e4004e36a2f0b0ce667492d.s3tc.stex", "res://.import/thescrea,.jpg-3f4d02a16e4004e36a2f0b0ce667492d.etc2.stex" ]
+source_file="res://Assets/Paintings/thescrea,.jpg"
+dest_files=[ "res://.import/thescrea,.jpg-78c156604f5214c03b05172d6c4e92a3.s3tc.stex", "res://.import/thescrea,.jpg-78c156604f5214c03b05172d6c4e92a3.etc2.stex" ]
 
 [params]
 

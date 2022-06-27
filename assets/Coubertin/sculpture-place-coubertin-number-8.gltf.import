@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/sculpture-place-coubertin-number-8.gltf-dc7de54099536016e9334c88b2863601.scn"
+path="res://.import/sculpture-place-coubertin-number-8.gltf-0ff9b54305ad6d6d889b99a37350ac77.scn"
 
 [deps]
 
-source_file="res://assets/Coubertin/sculpture-place-coubertin-number-8.gltf"
-dest_files=[ "res://.import/sculpture-place-coubertin-number-8.gltf-dc7de54099536016e9334c88b2863601.scn" ]
+source_file="res://Assets/Coubertin/sculpture-place-coubertin-number-8.gltf"
+dest_files=[ "res://.import/sculpture-place-coubertin-number-8.gltf-0ff9b54305ad6d6d889b99a37350ac77.scn" ]
 
 [params]
 

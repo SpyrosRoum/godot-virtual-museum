@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/dying-gladiator.gltf-a49fe287242af6c70776846afa46f18f.scn"
+path="res://.import/dying-gladiator.gltf-88eccd165efabf1505a7704b3ccfcacb.scn"
 
 [deps]
 
-source_file="res://assets/DyingGladiator/dying-gladiator.gltf"
-dest_files=[ "res://.import/dying-gladiator.gltf-a49fe287242af6c70776846afa46f18f.scn" ]
+source_file="res://Assets/DyingGladiator/dying-gladiator.gltf"
+dest_files=[ "res://.import/dying-gladiator.gltf-88eccd165efabf1505a7704b3ccfcacb.scn" ]
 
 [params]
 
