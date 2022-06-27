@@ -1,0 +1,20 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+
+[node name="Icon" type="Label" parent="HBoxContainer"]
+margin_right = 65.0
+margin_bottom = 14.0
+text = "[Cart Icon]"
+
+[node name="ItemCount" type="Label" parent="HBoxContainer"]
+margin_left = 69.0
+margin_right = 77.0
+margin_bottom = 14.0
+text = "0"

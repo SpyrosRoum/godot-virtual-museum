@@ -18,7 +18,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	check_exhibit()
-	if !ui_manager.active_info():
+	if !ui_manager.active_popup():
 		movement(delta)
 	ui_manager.set_minimap(get_node("Viewport").get_texture())
 
@@ -34,14 +34,14 @@ func check_exhibit() -> void:
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
-		if !ui_manager.active_info():
+		if !ui_manager.active_popup():
 			mouse_look(event.relative)
 	elif event.is_action_pressed("toggle_cursor"):
 		toggle_mouse()
 	elif event.is_action_pressed("interact"):
-		if active_exhibit != null and !ui_manager.active_info():
+		if active_exhibit != null and !ui_manager.active_popup():
 			var data = active_exhibit.exhibit_data
-			ui_manager.spawn_info(data.name, data.description)
+			ui_manager.spawn_info(data)
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func mouse_look(mouse_movement: Vector2) -> void:
@@ -53,8 +53,8 @@ func movement(_delta: float) -> void:
 	var input = get_input_vector().normalized() * move_speed
 	velocity += transform.basis.xform(input)
 	velocity.y += GRAVITY
-	
-	velocity = move_and_slide(velocity, Vector3.UP, true) 
+
+	velocity = move_and_slide(velocity, Vector3.UP, true)
 	velocity *= decceleration
 
 func get_input_vector() -> Vector3:

@@ -10,14 +10,21 @@ margin_right = 798.0
 margin_bottom = 379.0
 window_title = "Popup Title"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="WindowDialog"]
+[node name="VBoxContainer" type="VBoxContainer" parent="WindowDialog"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 20.0
-margin_top = 20.0
-margin_right = -20.0
-margin_bottom = -20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="WindowDialog/VBoxContainer"]
+margin_right = 471.0
+margin_bottom = 176.0
+size_flags_vertical = 3
 bbcode_enabled = true
 bbcode_text = "Hello [color=blue]blue[/color]"
 text = "Hello blue"
 scroll_following = true
+
+[node name="Button" type="Button" parent="WindowDialog/VBoxContainer"]
+margin_top = 180.0
+margin_right = 471.0
+margin_bottom = 200.0
+text = "Add to cart"
