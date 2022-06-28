@@ -122,6 +122,10 @@ CART="*res://Scripts/Cart.gd"
 
 enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
 
+[gui]
+
+theme/custom="res://assets/base_theme.tres"
+
 [input]
 
 jump={
