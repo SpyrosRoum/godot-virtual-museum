@@ -7,3 +7,4 @@ script = ExtResource( 1 )
 id = ""
 name = "Cool Stuff"
 description = "This is so cool"
+cost = 0

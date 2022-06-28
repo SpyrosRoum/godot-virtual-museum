@@ -7,3 +7,4 @@ script = ExtResource( 1 )
 id = "coubertin"
 name = "Coubertin no. 8"
 description = "Sculpture place Coubertin number 8 at the Coubertin place in Louvain-la-neuve (Belgium) by Félix Roulin."
+cost = 0
