@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
+id = ""
 name = "Stanley"
 description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec neque sit amet quam imperdiet scelerisque. Praesent quis odio sit amet ligula vestibulum sagittis eu non magna. Donec rutrum sit amet est at consequat. Vivamus fringilla nisi eu eros blandit ultricies. Proin elementum pharetra tincidunt. Vivamus vestibulum, sapien pretium euismod mollis, leo ipsum condimentum mi, in luctus leo magna in enim. Cras elementum ipsum iaculis metus pellentesque lacinia. Pellentesque dapibus augue quis neque tincidunt feugiat. Sed placerat, augue eu congue pellentesque, augue orci commodo nisl, sit amet ultrices sem risus in tellus. Pellentesque a ullamcorper tortor.
 
