@@ -68,6 +68,7 @@ func _on_add_to_cart() -> void:
 		return;
 	CART.add_to_cart(_CURRENT_ITEM);
 	_CART_ITEMS.set_text(String(CART.items.size()));
+	_INFO_POPUP.hide()
 
 func on_video_finished() -> void:
 	# Automatically close pop-up when video ends
