@@ -36,4 +36,5 @@ func _on_confirmation() -> void:
 	card_info_popup.popup_centered()
 
 func _on_card_info_successful_confirm() -> void:
+	CART.items.clear()
 	hide()
