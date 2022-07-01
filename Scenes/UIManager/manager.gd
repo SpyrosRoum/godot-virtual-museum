@@ -6,6 +6,7 @@ onready var _INFO_POPUP: WindowDialog = get_node("InfoPopUp/WindowDialog");
 onready var _VIDEO_POPUP: WindowDialog = get_node("VideoPopUp/WindowDialog");
 onready var _MINIMAP: TextureRect = get_node("MiniMap");
 onready var _CART_ITEMS: Label = get_node("CartPrompt/HBoxContainer/ItemCount");
+onready var _BUY_SCREEN: BuyScreen = get_node("BuyScreen")
 # What is the current item
 var _CURRENT_ITEM: ExhibitData = null;
 
@@ -16,11 +17,17 @@ func _ready() -> void:
 
 	_VIDEO_POPUP.connect("popup_hide", self, "on_generic_popup_close");
 	_INFO_POPUP.connect("popup_hide", self, "on_generic_popup_close");
+	_BUY_SCREEN.connect("popup_hide", self, "on_generic_popup_close");
 	_INFO_POPUP.get_node("VBoxContainer/Button").connect("button_up", self, "_on_add_to_cart");
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("test_open_cart"):
+		$BuyScreen.popup_centered()
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 ## A helper method to get if there is any visible popup
 func active_popup() -> bool:
-	return _INFO_POPUP.visible or _VIDEO_POPUP.visible;
+	return _INFO_POPUP.visible or _VIDEO_POPUP.visible or _BUY_SCREEN.visible;
 
 ## Set the text of the prompt to the given text and make it visible
 func spawn_prompt(text: String) -> void:
@@ -68,6 +75,7 @@ func _on_add_to_cart() -> void:
 		return;
 	CART.add_to_cart(_CURRENT_ITEM);
 	_CART_ITEMS.set_text(String(CART.items.size()));
+	_INFO_POPUP.hide()
 
 func on_video_finished() -> void:
 	# Automatically close pop-up when video ends
