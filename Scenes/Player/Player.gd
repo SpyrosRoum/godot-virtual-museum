@@ -38,7 +38,7 @@ func check_exhibit() -> void:
 		ui_manager.destroy_prompt()
 	elif looking_at_assistant:
 		looking_at_assistant = false
-		ui_manager.destroy_prompt()		
+		ui_manager.destroy_prompt()
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
@@ -90,6 +90,6 @@ func toggle_mouse() -> void:
 
 func lock_mouse() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
+
 func unlock_mouse() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

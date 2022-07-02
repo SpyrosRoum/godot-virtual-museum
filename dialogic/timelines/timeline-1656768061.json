@@ -21,49 +21,73 @@
 			"z_index": 0
 		},
 		{
+			"character": "character-1656768135.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Καλωσήρθες στο μουσείο!"
+		},
+		{
 			"event_id": "dialogic_015",
 			"id": "anchor-1634488067",
 			"index": 0,
 			"name": "Loop"
 		},
 		{
-			"character": "",
+			"character": "character-1656768135.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "Τι θες να μάθεις;"
+			"question": "Πως μπορώ να βοηθήσω;"
 		},
 		{
-			"choice": "Επιλογή 1",
+			"choice": "Τι εκθέματα έχει το μουσείο;",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1656768135.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Εδώ είναι μια απάντηση για την επιλγή 1"
+			"text": "Το μουσείο έχει διάφορα αγάλματα και πίνακες, ενώ στο τέλος θα βρεις και ένα ντοκιμαντέρ."
+		},
+		{
+			"character": "character-1656768135.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Αν θες να μάθεις περισσότερα για ένα έκθεμα μπορείς να διαβάσεις την περιγραφή του πατώντας `E` στο βιβλίο δίπλα του."
 		},
 		{
 			"anchor_id": "anchor-1634488067",
 			"event_id": "dialogic_016"
 		},
 		{
-			"choice": "Επιλογή 2",
+			"choice": "Πως μπορώ να αγοράσω αντίγραφα των εκθεμάτων;",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1656768135.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Εδώ είναι μια απάντηση για την επιλγή 2"
+			"text": "Συμβαίνει συχνά να αρέσουν τα εκθέματά μας, οπότε έχουμε φροντήσει να πουλάμε αντίγραφα."
+		},
+		{
+			"character": "character-1656768135.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Όταν διαβάζεις μια περιγραφή σου δίνεται η επιλογή να προσθέσεις ένα αντίγραφο του εκθέματος στο καλάθι σου."
+		},
+		{
+			"character": "character-1656768135.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Πατώντας `Z` μπορείς να δεις τι έχεις στο καλάθι σου και να αφαιρέσεις πράγματα αν άλλαξες γνώμη.\nΑπό εκεί μπορείς να προχωρήσεις σε αγορά, ή, αν προτιμάς, έλα σε εμένα για να κάνεις την αγορά."
 		},
 		{
 			"anchor_id": "anchor-1634488067",
