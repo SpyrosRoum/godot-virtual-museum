@@ -51,7 +51,10 @@
 [ext_resource path="res://assets/ExhibitTexts/data_thenightwatch.tres" type="Resource" id=49]
 [ext_resource path="res://assets/ExhibitTexts/data_thescream.tres" type="Resource" id=50]
 [ext_resource path="res://assets/Chair/armchair01.gltf" type="PackedScene" id=51]
-[ext_resource path="res://Scenes/Assistant/Assistant.tscn" type="PackedScene" id=52]
+[ext_resource path="res://assets/UI Icons/film.png" type="Texture" id=52]
+[ext_resource path="res://assets/person_talking.png" type="Texture" id=53]
+[ext_resource path="res://Scenes/Level/VideoRoomManager.gd" type="Script" id=54]
+[ext_resource path="res://Scenes/Player/InteractPoint.tscn" type="PackedScene" id=55]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )

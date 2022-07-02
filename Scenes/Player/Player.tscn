@@ -53,3 +53,6 @@ cull_mask = 1048573
 environment = SubResource( 5 )
 projection = 1
 size = 12.0
+
+[node name="Listener" type="Listener" parent="."]
+current = true

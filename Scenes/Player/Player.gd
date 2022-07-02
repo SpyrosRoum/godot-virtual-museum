@@ -12,6 +12,7 @@ onready var ray = $Head/Camera/RayCast
 var velocity: Vector3 = Vector3.ZERO
 
 var active_exhibit: Exhibit
+var active_interact_point: InteractPoint
 var looking_at_assistant: bool = false
 var dialog_active: bool = false
 
@@ -19,25 +20,25 @@ func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _process(delta: float) -> void:
-	check_exhibit()
+	check_collisions()
 	if !ui_manager.active_popup():
 		movement(delta)
 	ui_manager.set_minimap(get_node("Viewport").get_texture())
 
-func check_exhibit() -> void:
+func check_collisions() -> void:
 	if ray.is_colliding():
 		var obj = ray.get_collider().get_parent()
-		if obj is Assistant:
-			looking_at_assistant = true
-			ui_manager.spawn_prompt("Interact with assistant")
+		if active_interact_point == null and ray.get_collider() is InteractPoint:
+			active_interact_point = ray.get_collider() as InteractPoint
+			ui_manager.spawn_prompt(active_interact_point.interact_name)
 		if active_exhibit == null and obj is Exhibit:
-				active_exhibit = obj as Exhibit
-				ui_manager.spawn_prompt("Interact with %s" % [active_exhibit.exhibit_data.name])
+			active_exhibit = obj as Exhibit
+			ui_manager.spawn_prompt("Interact with %s" % [active_exhibit.exhibit_data.name])
 	elif active_exhibit != null:
 		active_exhibit = null
 		ui_manager.destroy_prompt()
-	elif looking_at_assistant:
-		looking_at_assistant = false
+	elif active_interact_point != null:
+		active_interact_point = null
 		ui_manager.destroy_prompt()
 
 func _input(event: InputEvent) -> void:
@@ -47,12 +48,17 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("toggle_cursor"):
 		toggle_mouse()
 	elif event.is_action_pressed("interact"):
-		if looking_at_assistant:
-			begin_dialog()
+		if active_interact_point != null:
+			call(active_interact_point.method)
 		elif active_exhibit != null and !ui_manager.active_popup():
 			var data = active_exhibit.exhibit_data
 			ui_manager.spawn_info(data)
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	elif event.is_action_pressed("test_play_video"):
+		begin_video_playback()
+
+func begin_video_playback() -> void:
+	get_node("/root/Level/VideoRoomManager").begin_video()
 
 func begin_dialog() -> void:
 	var scene = Dialogic.start("simple_timeline")
@@ -60,7 +66,7 @@ func begin_dialog() -> void:
 	add_child(scene)
 	dialog_active = true
 
-func _on_dialog_ended(timeline_name: String) -> void:
+func _on_dialog_ended(_timeline_name: String) -> void:
 	dialog_active = false
 
 func mouse_look(mouse_movement: Vector2) -> void:
