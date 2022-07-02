@@ -37,4 +37,12 @@ func _on_confirmation() -> void:
 
 func _on_card_info_successful_confirm() -> void:
 	CART.items.clear()
+	var info_dialog = AcceptDialog.new()
+	add_child(info_dialog)
+	info_dialog.dialog_text = "Purchase complete!"
+	info_dialog.popup_exclusive = true
+	info_dialog.popup_centered()
+	info_dialog.connect("confirmed", self, "_on_confirm_accept_dialog_confirmed") # fuck you gdscript 3 :^)
+
+func _on_confirm_accept_dialog_confirmed() -> void:
 	hide()
