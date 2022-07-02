@@ -94,15 +94,54 @@
 			"event_id": "dialogic_016"
 		},
 		{
-			"choice": "Τέλος",
+			"choice": "Θέλω να δω το καλάθι μου και να κάνω αγορά!",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
+			"character": "character-1656768135.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ήρθες στο κατάλληλο άτομο!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "open_cart",
+				"target_node_path": "/root/Level/UIManager"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1656768135.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ευχαριστώ!"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Αυτά είναι όλα",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1656768135.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Καλή μάθηση.."
+		},
+		{
 			"event_id": "dialogic_022",
-			"transition_duration": 1
+			"transition_duration": 0.8
 		},
 		{
 			"event_id": "dialogic_013"
