@@ -13,6 +13,7 @@ var velocity: Vector3 = Vector3.ZERO
 
 var active_exhibit: Exhibit
 var looking_at_assistant: bool = false
+var dialog_active: bool = false
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -47,19 +48,29 @@ func _input(event: InputEvent) -> void:
 		toggle_mouse()
 	elif event.is_action_pressed("interact"):
 		if looking_at_assistant:
-			var scene = Dialogic.start("simple_timeline")
-			add_child(scene)
+			begin_dialog()
 		elif active_exhibit != null and !ui_manager.active_popup():
 			var data = active_exhibit.exhibit_data
 			ui_manager.spawn_info(data)
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
+func begin_dialog() -> void:
+	var scene = Dialogic.start("simple_timeline")
+	scene.connect("timeline_end", self, "_on_dialog_ended")
+	add_child(scene)
+	dialog_active = true
+
+func _on_dialog_ended(timeline_name: String) -> void:
+	dialog_active = false
+
 func mouse_look(mouse_movement: Vector2) -> void:
+	if dialog_active: return
 	rotate_y(-deg2rad(mouse_movement.x * mouse_sensitivity))
 	$Head.rotate_x(deg2rad(mouse_movement.y * mouse_sensitivity))
 	$Head.rotation.x = clamp($Head.rotation.x, -PI/3, PI/3)
 
 func movement(_delta: float) -> void:
+	if dialog_active: return
 	var input = get_input_vector().normalized() * move_speed
 	velocity += transform.basis.xform(input)
 	velocity.y += GRAVITY
@@ -73,6 +84,12 @@ func get_input_vector() -> Vector3:
 
 func toggle_mouse() -> void:
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		unlock_mouse()
 	else:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		lock_mouse()
+
+func lock_mouse() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
+func unlock_mouse() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

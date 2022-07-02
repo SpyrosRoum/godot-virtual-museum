@@ -21,12 +21,6 @@
 			"z_index": 0
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Καλησπέρα"
-		},
-		{
 			"event_id": "dialogic_015",
 			"id": "anchor-1634488067",
 			"index": 0,
