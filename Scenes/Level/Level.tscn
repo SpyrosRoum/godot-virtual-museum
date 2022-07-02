@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Level/dev_dark.png" type="Texture" id=2]
@@ -51,6 +51,7 @@
 [ext_resource path="res://assets/ExhibitTexts/data_thenightwatch.tres" type="Resource" id=49]
 [ext_resource path="res://assets/ExhibitTexts/data_thescream.tres" type="Resource" id=50]
 [ext_resource path="res://assets/Chair/armchair01.gltf" type="PackedScene" id=51]
+[ext_resource path="res://Scenes/Assistant/Assistant.tscn" type="PackedScene" id=52]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
@@ -153,7 +154,6 @@ transform = Transform( 80, 0, 0, 0, 1, 0, 0, 0, 100, 0, 7.23872, 0 )
 layers = 2
 
 [node name="Roof" type="CSGBox" parent="RoofCombiner"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 width = 0.278493
 depth = 1.17712
 material = SubResource( 1 )
@@ -869,3 +869,6 @@ extents = Vector3( 32.2405, 9.97234, 70.4648 )
 origin_offset = Vector3( 0, -1.16895, 0 )
 enable_shadows = true
 interior_enable = true
+
+[node name="Assistant" parent="." instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.54042, -2.38419e-07, -39.9461 )

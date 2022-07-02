@@ -22,8 +22,12 @@ func _ready() -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("test_open_cart"):
-		$BuyScreen.popup_centered()
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		open_cart()
+
+## Show the cart
+func open_cart():
+	$BuyScreen.popup_centered()
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 ## A helper method to get if there is any visible popup
 func active_popup() -> bool:

@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=12 format=2]
 
-[ext_resource path="res://addons/dialogic/Example Assets/Fonts/Overlock/Overlock-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/Fonts/Roboto-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://addons/dialogic/Example Assets/Fonts/Overlock/Overlock-Bold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://assets/UI Icons/cross.png" type="Texture" id=3]
 
