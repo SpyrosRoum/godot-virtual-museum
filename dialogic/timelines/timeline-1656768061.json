@@ -117,14 +117,8 @@
 			"event_id": "dialogic_042"
 		},
 		{
-			"character": "character-1656768135.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Ευχαριστώ!"
-		},
-		{
-			"anchor_id": "anchor-1634488067",
-			"event_id": "dialogic_016"
+			"event_id": "dialogic_022",
+			"transition_duration": 0
 		},
 		{
 			"choice": "Αυτά είναι όλα",
