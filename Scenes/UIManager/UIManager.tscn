@@ -54,11 +54,13 @@ valign = 1
 [node name="InfoPopUp" parent="." instance=ExtResource( 2 )]
 
 [node name="MiniMap" type="TextureRect" parent="."]
+visible = false
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -121.92
-margin_bottom = 82.0
+margin_left = -141.0
+margin_bottom = 274.0
 grow_horizontal = 0
+expand = true
 
 [node name="VideoPopUp" parent="." instance=ExtResource( 3 )]
 

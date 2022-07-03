@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 	check_collisions()
 	if !ui_manager.active_popup():
 		movement(delta)
-	ui_manager.set_minimap(get_node("Viewport").get_texture())
+	# ui_manager.set_minimap(get_node("Viewport").get_texture())
 
 func check_collisions() -> void:
 	if ray.is_colliding():
