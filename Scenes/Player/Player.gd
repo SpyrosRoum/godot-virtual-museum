@@ -61,6 +61,8 @@ func begin_video_playback() -> void:
 	get_node("/root/Level/VideoRoomManager").begin_video()
 
 func begin_dialog() -> void:
+	if dialog_active:
+		return
 	var scene = Dialogic.start("simple_timeline")
 	scene.connect("timeline_end", self, "_on_dialog_ended")
 	add_child(scene)
