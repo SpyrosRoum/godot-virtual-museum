@@ -49,7 +49,7 @@ func restore_lights() -> void:
 	var _a = tween.start()
 
 func dim_light(omni: OmniLight) -> void:
-	var _ret = tween.interpolate_property(omni, "light_energy", 1, 0, 1.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	var _ret = tween.interpolate_property(omni, "light_energy", 1, 0.2, 1.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 
 func restore_light(omni: OmniLight) -> void:
-	var _ret = tween.interpolate_property(omni, "light_energy", 0, 1, 1.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	var _ret = tween.interpolate_property(omni, "light_energy", 0.2, 1, 1.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
