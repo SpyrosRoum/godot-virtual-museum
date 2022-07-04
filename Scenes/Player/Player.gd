@@ -33,7 +33,7 @@ func check_collisions() -> void:
 			ui_manager.spawn_prompt(active_interact_point.interact_name)
 		if active_exhibit == null and obj is Exhibit:
 			active_exhibit = obj as Exhibit
-			ui_manager.spawn_prompt("Interact with %s" % [active_exhibit.exhibit_data.name])
+			ui_manager.spawn_prompt("Press [E] to interact with %s" % [active_exhibit.exhibit_data.name])
 	elif active_exhibit != null:
 		active_exhibit = null
 		ui_manager.destroy_prompt()

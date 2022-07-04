@@ -897,17 +897,17 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="VideoInteractPoint" parent="." instance=ExtResource( 55 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.144562, 0.0143854, 33.4575 )
-interact_name = "Begin video"
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.144562, 0.385417, 33.4575 )
+interact_name = "Press [E] to toggle video"
 method = "begin_video_playback"
 
 [node name="Sprite3D" parent="VideoInteractPoint" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.837102, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.715985, 0 )
 texture = ExtResource( 52 )
 
 [node name="Assistant" parent="." instance=ExtResource( 55 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71662, 0.0101918, -39.6686 )
-interact_name = "Begin conversation"
+transform = Transform( 1.21813, 0, 0, 0, 1.21813, 0, 0, 0, 1.21813, -3.71662, 0.255536, -39.6686 )
+interact_name = "Press [E] to begin conversation"
 method = "begin_dialog"
 y_offset = 1.2
 
