@@ -104,13 +104,29 @@ margin_top = 49.0
 margin_right = -8.0
 margin_bottom = -36.0
 bbcode_enabled = true
-bbcode_text = "Welcome to help
-[b]Hello[/b]
-[i]{text}[/i]
-[center]{text}[/center]
-[color=blue]{text}[/color]"
-text = "Welcome to help
-Hello
-{text}
-{text}
-{text}"
+bbcode_text = "Welcome to Help screen.
+
+How to move player::
+W = Forward
+S  = Backward
+A  = Left
+D  = Right
+
+Look around by moving your mouse.
+
+Press E to interact with objects in the museum.
+
+Press Z to open buy screen."
+text = "Welcome to Help screen.
+
+How to move player::
+W = Forward
+S  = Backward
+A  = Left
+D  = Right
+
+Look around by moving your mouse.
+
+Press E to interact with objects in the museum.
+
+Press Z to open buy screen."
