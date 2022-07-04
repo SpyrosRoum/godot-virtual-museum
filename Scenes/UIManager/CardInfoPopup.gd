@@ -23,9 +23,8 @@ func _on_CardNumber_text_changed(new_text: String) -> void:
 	var index = 0
 	for ch in new_text:
 		# Limit input to the 16 digits plus 3 '-'
-		if index >= 19:
+		if index >= 18:
 			number_valid = true
-			break
 		# Only allow number inputs
 		if is_number(ch):
 			out += ch
@@ -33,6 +32,8 @@ func _on_CardNumber_text_changed(new_text: String) -> void:
 			if index == 3 or index == 8 or index == 13:
 				out += '-'
 		index += 1
+		if number_valid:
+			break
 	
 	# Automatically delete '-' when the user erases input by using backspace
 	var last = len(out)
@@ -51,9 +52,8 @@ func _on_Date_text_changed(new_text: String) -> void:
 	var index = 0
 	for ch in new_text:
 		# Limit input to the 6 digits plus 2 '-'
-		if index >= 8:
+		if index >= 7:
 			date_valid = true
-			break
 		# Only allow number inputs
 		if is_number(ch):
 			out += ch
@@ -61,6 +61,8 @@ func _on_Date_text_changed(new_text: String) -> void:
 			if index == 1 or index == 4:
 				out += '-'
 		index += 1
+		if date_valid:
+			break
 	
 	# Automatically delete '-' when the user erases input by using backspace
 	var last = len(out)
@@ -78,13 +80,14 @@ func _on_PIN_text_changed(new_text: String) -> void:
 	var index = 0
 	for ch in new_text:
 		# Limit input to the 3 digits
-		if index >= 3:
+		if index >= 2:
 			pin_valid = true
-			break
 		# Only allow number inputs
 		if is_number(ch):
 			out += ch
 		index += 1
+		if pin_valid:
+			break
 	node.text = out
 	node.caret_position = len(out)
 
