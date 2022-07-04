@@ -874,7 +874,7 @@ interior = true
 data = SubResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.385688, -1.90735e-06, -39.1012 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.385688, -1.90735e-06, -47.5333 )
 ui_manager = NodePath("../UIManager")
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="."]
