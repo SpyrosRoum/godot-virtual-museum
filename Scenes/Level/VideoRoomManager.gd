@@ -18,7 +18,6 @@ func begin_video() -> void:
 		return
 	playing = true
 	player.stream = preload("res://assets/video.webm")
-	add_child(player)
 
 	var mat: SpatialMaterial = SpatialMaterial.new()
 	mat.albedo_texture = player.get_video_texture()
