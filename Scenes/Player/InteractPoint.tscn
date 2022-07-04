@@ -6,7 +6,7 @@
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.336258, 0.523948, 0.321528 )
 
-[node name="InteractPoint" type="StaticBody"]
+[node name="InteractPoint" type="Area"]
 script = ExtResource( 1 )
 y_offset = 0.84
 
