@@ -9,11 +9,6 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Spatial",
-"class": "Assistant",
-"language": "GDScript",
-"path": "res://Scenes/Assistant/Assistant.gd"
-}, {
 "base": "AcceptDialog",
 "class": "BuyScreen",
 "language": "GDScript",
@@ -100,7 +95,6 @@ _global_script_classes=[ {
 "path": "res://Scenes/UIManager/manager.gd"
 } ]
 _global_script_class_icons={
-"Assistant": "",
 "BuyScreen": "",
 "Cart": "",
 "DTS": "",
